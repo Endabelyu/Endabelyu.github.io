@@ -86,7 +86,7 @@ img {
 .about-me .front-end {
     color: black;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 45px;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
 }
 
@@ -98,6 +98,7 @@ img {
     font-weight: 300;
     text-align: justify;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    font-weight: 400;
 
 }
 
@@ -191,7 +192,20 @@ img {
     background-color: #eeee;
     text-align: center;
     padding: 15px;
-    font-size: 13px;
+    font-size: 1.em;
     font-weight: lighter;
     color: darkolivegreen;
+    margin-top: -5px;
+}
+
+.footer svg {
+    /* color: rgb(255, 0, 212); */
+    color: red;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.footer span {
+    /* margin-bottom: -5px; */
+    /* background-color: red; */
 }
