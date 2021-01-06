@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* header */
+.header {
+    width: 100%;
+    height: 150vh;
+    background-size: cover;
+    display: grid;
+    grid-template-areas:
+        'navbar navbar navbar'
+        'hero about about'
+        'hero about about';
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    gap: 30px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.hero {
+    grid-area: about;
+    min-height: 530px;
+    background-image: url(../Img/baymax.gif);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.about-me {
+    grid-area: hero;
+    width: 100%;
+    min-height: 530px;
+}
+
+.about-me .endabelyu {
+    font-weight: 600;
+    font-size: 30px;
+    color: # eff8ff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+
+
+}
+
+.about-me .front-end {
+    color: black;
+    font-weight: 600;
+    font-size: 46px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
+
+}
+
+.about-me p {
+
+    line-height: 30px;
+    font-size: 1em;
+    font-family: Helvetica, sans-serif, sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    color: white;
+
+}
+
+  @media screen and (max-width: 576px) {
+       
+    body {
+        height: 200vh;
+    }
+    .navbar {
+            /* background-color: rgb(142, 79, 243); */
+            background-color: rgb(138, 68, 250);
+            ;
+        }
+
+        nav ul {
+            flex-direction: column;
+            position: absolute;
+            justify-content: space-evenly;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            /* background-color: rgba(105, 21, 241, 0.9); */
+            background-color: rgb(138, 68, 250);
+            ;
+            width: 80%;
+            color: whitesmoke;
+            margin-right: 0;
+            z-index: -2;
+            opacity: .9;
+            transform: translate(100%);
+            transition: all 1s;
+            opacity: 0;
+
+        }
+
+        nav ul.slide {
+            transform: translate(0);
+            opacity: 1;
+        }
+
+        .menu-toogle {
+            display: flex;
+        }
+
+        .menu-toogle span {
+            margin-right: 20px;
+        }
+
+        .header {
+            grid-template-areas:
+                'navbar'
+                'about'
+                'hero';
+            grid-template-columns: 1fr;
+                grid-template-rows: 2fr;
+        }
+        .hero {
+            min-height: 400px;
+            margin-top: 30px;
+            background-color: wheat;
+
+        }
+
+        .about-me {
+            grid-area: hero;
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .about-me .endabelyu {
+            font-weight: 600;
+            font-size: 1em;
+        }
+
+        .about-me .front-end {
+            color: black;
+            font-weight: 600;
+            font-size: 1.3em;
+
+
+        }
+
+        .about-me p {
+            font-size: 16px;
+            font-weight: light;
+            text-align: left;
+            color: white;
+
+        }
+        
+/* project */
+.project {
+    text-align: center;
+    min-height: 200px;
+    background-color: yellowgreen;
+    margin-bottom: 20px;
+
+}
+
+/* skill */
+.skill {
+    margin-bottom: 20px;
+    background-color: salmon;
+}
+
+.skill .TS {
+    display: grid;
+    grid-column: 1/-1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.container-skill {
+    width: 100%;
+    min-height: 250px;
+    display: grid;
+    grid-template-areas:
+        'tools tools  skill skill';
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+}
+
+.skill .tools {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    background-color: violet;
+
+}
+
+.skill .tools a img {
+    text-align: center;
+    width: 20%;
+    padding: 5px;
+
+}
+
+.skill .skills {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    background-color: violet;
+}
+
+.skill .skills img {
+    text-align: center;
+    width: 20%;
+    padding: 5px;
+}
+
+/* gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    min-height: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    gap: 20px
+}
+
+.gallery h2 {
+    grid-column: 1/-1;
+    padding: 10px;
+
+}
+
+/* contact */
+.contact {
+    min-height: 200px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    line-height: 10px;
+    display: flex;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.em;
+    font-weight: lighter;
+    color: whitesmoke;
+    justify-content: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+    font-weight: 500;
+    margin-top: 5px;
+    min-height: 10px;
+}
+
+.footer p {
+    letter-spacing: 1px;
+}
+
+.footer .s1 {
+    text-shadow: none;
+    color: rgb(83, 78, 78);
+    font-size: 1em;
+}
+
+.footer .fa-heart {
+    font-size: 1em;
+    color: red;
+    padding: 2px
+}
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <header class="header" id="home">
+        <div class="hero"> <p></p></div>
+        <div class="about-me">
+            <h1 class="endabelyu">Hi, I'm Endabelyu</h1>
+            <h1 class="front-end"> Junior Front-end Developer </h1>
+            <p> What is Endabelyu? <br> Endabelyu is the pronunciation in English from the initials of my name which  consists of the letters N (en) and and W (Double). But my real name is Naswa Wilantama, I'm from Indonesia, I have been working as freelance front-end developer.</p>
+        </div>
+    </header>
+    </div>
+      <section class="project" id="project">
+        <h2>Project</h2>
+    </section>
+
+
+
+    <section class="skill" id="skill">
+        <h2 class="TS"> Tools &  Skill</h2>
+    <div class="container-skill">
+        <div class="tools">
+
+            <h2>Tools</h2>
+            <a href=""><img src="img/figma.png" alt="Figma"></a>
+            <a href=""><img src="img/visual-studio-code.png" alt="Visual Studio Code"></a>
+
+        </div>
+        <div class="skills">
+            <h2>Skill</h2>
+            <a href=""><img src="" alt="HTML5"></a>
+            <a href=""><img src="" alt="CSS3"></a>
+            <a href=""><img src="" alt="Javascript"></a>
+        </div>
+    </div>
+
+    </section>
+
+
+
+    <section class="gallery" id="gallery"> 
+    <h2>Gallery</h2>
+            <img src="https://source.unsplash.com/random/200x201" alt="">
+            <img src="https://source.unsplash.com/random/200x202" alt="">
+            <img src="https://source.unsplash.com/random/200x203" alt="">
+            <img src="https://source.unsplash.com/random/200x204" alt="">
+            <img src="https://source.unsplash.com/random/200x205" alt="">
+            <img src="https://source.unsplash.com/random/200x206" alt="">
+            <img src="https://source.unsplash.com/random/200x207" alt="">
+            <img src="https://source.unsplash.com/random/200x208" alt="">
+            <img src="https://source.unsplash.com/random/200x209" alt="">
+            <img src="https://source.unsplash.com/random/200x210" alt="">   
+            
+    </section>
+
+    <section class="contact" id="contact"> <h2>Contact</h2> 
+    </section>
+
+        <!-- akhir content -->
+
+    <!-- footer -->
+    <footer class="footer"> <p> <i class="fa fa-copyright s1"></i> 2021 by Endabelyu. <br> Made with<i class='fa fa-heart'></i>in Indonesia.
+    </p></footer>
+</body>
+</html>
