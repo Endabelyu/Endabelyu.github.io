@@ -6,6 +6,11 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 img {
@@ -28,58 +33,101 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10000;
+    z-index: 2;
     padding: 10px;
-    /* background-color: rgba(142, 79, 243, 0.705); */
     height: 64px;
+    transition: .3s;
 
+
+}
+
+.muncul {
+    background-color: rgb(138, 68, 250);
+    ;
 
 }
 
 .navbar .brand {
     margin: 0 30px;
-    position: relative;
     float: left;
     color: white;
     font-weight: bolder;
     font-size: 24px;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+
     /* background-color: white; */
 }
 
 .navbar .brand h4:hover {
-    color: teal;
+    color: rgb(15, 219, 219);
 }
 
 nav ul {
     font-size: 16px;
     display: flex;
-    position: relative;
     align-items: center;
     /* background-color: rgba(0, 0, 0, 1); */
     color: white;
     text-align: center;
     margin: 0 10px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+
 }
 
-nav ul li {
-    position: relative;
-}
+nav ul li {}
 
 nav ul li a {
-    position: relative;
+
     font-weight: 500;
     color: white;
-    padding: 0 30px;
+    padding: 0 20px;
     text-transform: capitalize;
     letter-spacing: 1.5px;
 }
 
 nav ul li a:hover {
-    color: teal;
+    color: rgb(15, 219, 219);
 }
+
+nav.sticky {
+    background-color: rgba(142, 79, 243, 0.705);
+    color: ;
+    padding: 10px;
+}
+
+.menu-toogle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toogle input {
+    position: absolute;
+    width: 42px;
+    height: 28px;
+    opacity: 0;
+    left: -7px;
+    top: -4px;
+    cursor: pointer;
+    margin-right: 20px;
+    z-index: 3;
+
+}
+
+.menu-toogle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(193, 174, 247);
+    transition: all .3s;
+
+}
+
+
 
 /* header */
 .header {
@@ -267,5 +315,121 @@ nav ul li a:hover {
     padding: 2px
 }
 
+/* hamburger menu animation */
 
-/* responsive */
+.menu-toogle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toogle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: whitesmoke;
+}
+
+.menu-toogle span:nth-child(3) {}
+
+.menu-toogle input:checked~span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toogle span:last-child {
+    transform-origin: 0 100%;
+}
+
+.menu-toogle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, .0px);
+    background-color: whitesmoke;
+}
+
+/* responsive breakpoint*/
+
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        /* background-color: rgb(142, 79, 243); */
+        background-color: rgb(138, 68, 250);
+        ;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-evenly;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        /* background-color: rgba(105, 21, 241, 0.9); */
+        background-color: rgb(138, 68, 250);
+        ;
+        width: 80%;
+        color: whitesmoke;
+        margin-right: 0;
+        z-index: -2;
+        opacity: .9;
+        transform: translate(100%);
+        transition: all 1s;
+        opacity: 0;
+
+    }
+
+    nav ul.slide {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    .menu-toogle {
+        display: flex;
+    }
+
+    .menu-toogle span {
+        margin-right: 20px;
+    }
+
+
+
+
+
+
+    @media screen and (max-width: 576px) {
+        .navbar {
+            /* background-color: rgb(142, 79, 243); */
+            background-color: rgb(138, 68, 250);
+            ;
+        }
+
+        nav ul {
+            flex-direction: column;
+            position: absolute;
+            justify-content: space-evenly;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            /* background-color: rgba(105, 21, 241, 0.9); */
+            background-color: rgb(138, 68, 250);
+            ;
+            width: 80%;
+            color: whitesmoke;
+            margin-right: 0;
+            z-index: -2;
+            opacity: .9;
+            transform: translate(100%);
+            transition: all 1s;
+            opacity: 0;
+
+        }
+
+        nav ul.slide {
+            transform: translate(0);
+            opacity: 1;
+        }
+
+        .menu-toogle {
+            display: flex;
+        }
+
+        .menu-toogle span {
+            margin-right: 20px;
+        }
+
+    }
