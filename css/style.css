@@ -18,10 +18,10 @@ img {
 }
 
 body {
-    font-family: Poppins, hevletica, sans-serif;
-    background-color: rgb(190, 168, 250);
+    font-family: 'Poppins', 'Montserrat', helvetica, sans-serif;
+    background-color: rgb(144, 137, 245);
     margin: 25px;
-    color: whitesmoke;
+    color: white;
     font-size: 18px;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .muncul {
-    background-color: rgb(138, 68, 250);
+    background-color: rgb(89, 79, 226);
     ;
 
 }
@@ -92,7 +92,7 @@ nav ul li a:hover {
 }
 
 nav.sticky {
-    background-color: rgba(142, 79, 243, 0.705);
+    background-color: rgb(89, 79, 226);
     color: ;
     padding: 10px;
 }
@@ -123,7 +123,7 @@ nav.sticky {
     width: 28px;
     height: 3px;
     border-radius: 3px;
-    background-color: rgb(193, 174, 247);
+    background-color: rgb(223, 219, 219);
     transition: all .3s;
 
 }
@@ -133,7 +133,7 @@ nav.sticky {
 /* header */
 .header {
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     background-size: cover;
     display: grid;
     grid-template-areas:
@@ -146,7 +146,7 @@ nav.sticky {
     position: relative;
     margin-bottom: 20px;
     font-size: 1em;
-    margin-top: -20px;
+
 }
 
 .hero {
@@ -155,6 +155,7 @@ nav.sticky {
     background-image: url(../Img/baymax.gif);
     background-size: cover;
     background-position: center;
+    padding: 50px 20px 0 0;
 
 }
 
@@ -162,6 +163,8 @@ nav.sticky {
     grid-area: hero;
     width: 100%;
     min-height: 530px;
+    padding: 77px 0 0 20px;
+    /* background-color: blanchedalmond; */
 }
 
 .about-me .endabelyu {
@@ -195,12 +198,256 @@ nav.sticky {
 
 /* project */
 .project {
-    text-align: center;
-    min-height: 200px;
-    background-color: yellowgreen;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    /* text-align: center; */
+    min-height: 80vmax;
+    /* background-color: yellowgreen; */
     margin-bottom: 20px;
+    color: white;
+}
+
+.project h2 {
+    text-transform: uppercase;
+    font-size: 3.2em;
+    text-align: left;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.container-project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    column-gap: 30px;
+    row-gap: 20px;
+    padding: 10px;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.container-project img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+
+
+.project1 {
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 5px;
+    height: 713px;
+    width: 570px;
+    background-color: rgb(51, 48, 65);
+    margin-bottom: 25px;
+    /* color: rgb(197, 194, 194); */
+    cursor: pointer;
+}
+
+.project1 p {
+    margin: 50px 0 0 50px;
+    /* background-color: white; */
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.project p a {
+    font-size: 14px;
+    color: white;
+    padding-left: 5px;
+    padding-right: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.project p a:hover {
+    color: rgb(6, 250, 250);
+
+}
+
+.project .fa-link {
+    font-size: 1em;
+
+}
+
+.project .fa-book {
+    font-size: 1em;
+}
+
+.project1 span {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(107, 110, 252);
+    font-family: 'Monstserrat', sans-serif;
+}
+
+.project1 img {
+    border-radius: inherit;
+    height: 713px;
+    width: 570px;
+    object-fit: cover;
+}
+
+
+
+.project2 {
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 5px;
+    height: 713px;
+    width: 570px;
+    background-color: black;
+    margin-bottom: 25px;
+    /* color: rgb(197, 194, 194); */
+    cursor: pointer;
+}
+
+.project2 p {
+    margin: 50px 0 0 50px;
+    /* background-color: white; */
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    z-index: 5;
+
+}
+
+.project2 span {
+    color: rgb(107, 110, 252);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Monstserrat', sans-serif;
+}
+
+.project2 img {
+    border-radius: inherit;
+    height: 713px;
+    width: 570px;
+    object-fit: cover;
+}
+
+
+
+.project3 {
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 5px;
+    height: 713px;
+    width: 570px;
+    background-color: black;
+    margin-bottom: 10px;
+    /* color: rgb(197, 194, 194); */
+    cursor: pointer;
+}
+
+.project3 p {
+    margin: 50px 0 0 50px;
+    /* background-color: white; */
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    z-index: 5;
+
+}
+
+.project3 span {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Monstserrat', sans-serif;
+    color: rgb(107, 110, 252);
+}
+
+.project3 img {
+    border-radius: inherit;
+    height: 713px;
+    width: 570px;
+    object-fit: cover;
+}
+
+
+
+.project4 {
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 5px;
+    height: 713px;
+    width: 570px;
+    background-color: black;
+    margin-bottom: 10px;
+    /* color: rgb(197, 194, 194); */
+    cursor: pointer;
+}
+
+.project4 p {
+    margin: 50px 0 0 50px;
+    /* background-color: white; */
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    z-index: 5;
+
+}
+
+.project4 span {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Monstserrat', sans-serif;
+    color: rgb(107, 110, 252);
+}
+
+.project4 img {
+    border-radius: inherit;
+    height: 713px;
+    width: 570px;
+    object-fit: cover;
+}
+
+
+
+.project1 img:hover {
+    opacity: .4;
+
+}
+
+.project2 img:hover {
+    opacity: .4;
+    zoom: 1.2;
+}
+
+.project3 img:hover {
+    opacity: .4;
+    zoom: 1.2;
+}
+
+.project4 img:hover {
+    opacity: .4;
+    zoom: 1.2;
+}
+
+
+
+
+
+
+/* .project1 {
+    background-image: url(""../../../Project coding/baymax/baymax2.gif");
+} */
+
+
+/* .project1,
+.project2,
+.project3, */
+
 
 /* skill */
 .skill {
@@ -221,8 +468,7 @@ nav.sticky {
     width: 100%;
     min-height: 250px;
     display: grid;
-    grid-template-areas:
-        'tools tools  skill skill';
+    grid-template-areas: 'tools tools  skill skill';
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     padding: 10px;
@@ -395,7 +641,8 @@ nav.sticky {
     @media screen and (max-width: 576px) {
         .navbar {
             /* background-color: rgb(142, 79, 243); */
-            background-color: rgb(138, 68, 250);
+            background-color: rgb(89, 79, 226);
+            ;
             ;
         }
 
@@ -407,7 +654,8 @@ nav.sticky {
             top: 0;
             height: 100vh;
             /* background-color: rgba(105, 21, 241, 0.9); */
-            background-color: rgb(138, 68, 250);
+            background-color: rgb(89, 79, 226);
+            ;
             ;
             width: 80%;
             color: whitesmoke;
@@ -434,24 +682,24 @@ nav.sticky {
         }
 
         .header {
-            grid-template-areas:
-                'navbar'
+            grid-template-areas: 'navbar'
                 'about'
                 'hero';
             grid-template-columns: 1fr;
             padding-top: 25px;
+            height: 130vh;
         }
 
         .hero {
             min-height: 400px;
             margin-top: 30px;
-            background-color: wheat;
 
         }
 
         .about-me {
             grid-area: hero;
             width: 100%;
+            padding: 0;
 
         }
 
