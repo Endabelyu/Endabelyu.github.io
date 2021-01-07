@@ -217,7 +217,7 @@ nav.sticky {
 
 .container-project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     column-gap: 30px;
     row-gap: 20px;
     padding: 10px;
@@ -235,7 +235,8 @@ nav.sticky {
 
 
 
-.project1 {
+.project1,
+.project2 {
     letter-spacing: 3px;
     font-size: 1em;
     font-weight: 300;
@@ -295,21 +296,6 @@ nav.sticky {
     object-fit: cover;
 }
 
-
-
-.project2 {
-    letter-spacing: 3px;
-    font-size: 1em;
-    font-weight: 300;
-    border-radius: 5px;
-    height: 713px;
-    width: 570px;
-    background-color: black;
-    margin-bottom: 25px;
-    /* color: rgb(197, 194, 194); */
-    cursor: pointer;
-}
-
 .project2 p {
     margin: 50px 0 0 50px;
     /* background-color: white; */
@@ -336,7 +322,8 @@ nav.sticky {
 
 
 
-.project3 {
+.project3,
+.project4 {
     letter-spacing: 3px;
     font-size: 1em;
     font-weight: 300;
@@ -373,20 +360,6 @@ nav.sticky {
     object-fit: cover;
 }
 
-
-
-.project4 {
-    letter-spacing: 3px;
-    font-size: 1em;
-    font-weight: 300;
-    border-radius: 5px;
-    height: 713px;
-    width: 570px;
-    background-color: black;
-    margin-bottom: 10px;
-    /* color: rgb(197, 194, 194); */
-    cursor: pointer;
-}
 
 .project4 p {
     margin: 50px 0 0 50px;
@@ -595,8 +568,7 @@ nav.sticky {
 @media screen and (max-width: 800px) {
     .navbar {
         /* background-color: rgb(142, 79, 243); */
-        background-color: rgb(138, 68, 250);
-        ;
+        background-color: rgb(89, 79, 226);
     }
 
     nav ul {
@@ -607,7 +579,71 @@ nav.sticky {
         top: 0;
         height: 100vh;
         /* background-color: rgba(105, 21, 241, 0.9); */
-        background-color: rgb(138, 68, 250);
+        background-color: rgb(89, 79, 226);
+        width: 80%;
+        color: whitesmoke;
+        margin-right: 0;
+        z-index: -2;
+        opacity: .9;
+        transform: translate(100%);
+        transition: all 1s;
+        opacity: 0;
+
+    }
+
+    nav ul.slide {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    .menu-toogle {
+        display: flex;
+    }
+
+    .menu-toogle span {
+        margin-right: 20px;
+    }
+
+    .header {
+        grid-template-areas: 'navbar'
+            'about'
+            'hero';
+        grid-template-columns: 1fr;
+        padding-top: 25px;
+        height: 130vh;
+        about
+    }
+
+    .about-me {
+        grid-area: hero;
+        width: 100%;
+        padding: 0 0 0 10px;
+
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        /* background-color: rgb(142, 79, 243); */
+        background-color: rgb(89, 79, 226);
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-evenly;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        /* background-color: rgba(105, 21, 241, 0.9); */
+        background-color: rgb(89, 79, 226);
+        ;
         ;
         width: 80%;
         color: whitesmoke;
@@ -633,93 +669,79 @@ nav.sticky {
         margin-right: 20px;
     }
 
-
-
-
-
-
-    @media screen and (max-width: 576px) {
-        .navbar {
-            /* background-color: rgb(142, 79, 243); */
-            background-color: rgb(89, 79, 226);
-            ;
-            ;
-        }
-
-        nav ul {
-            flex-direction: column;
-            position: absolute;
-            justify-content: space-evenly;
-            right: 0;
-            top: 0;
-            height: 100vh;
-            /* background-color: rgba(105, 21, 241, 0.9); */
-            background-color: rgb(89, 79, 226);
-            ;
-            ;
-            width: 80%;
-            color: whitesmoke;
-            margin-right: 0;
-            z-index: -2;
-            opacity: .9;
-            transform: translate(100%);
-            transition: all 1s;
-            opacity: 0;
-
-        }
-
-        nav ul.slide {
-            transform: translate(0);
-            opacity: 1;
-        }
-
-        .menu-toogle {
-            display: flex;
-        }
-
-        .menu-toogle span {
-            margin-right: 20px;
-        }
-
-        .header {
-            grid-template-areas: 'navbar'
-                'about'
-                'hero';
-            grid-template-columns: 1fr;
-            padding-top: 25px;
-            height: 130vh;
-        }
-
-        .hero {
-            min-height: 400px;
-            margin-top: 30px;
-
-        }
-
-        .about-me {
-            grid-area: hero;
-            width: 100%;
-            padding: 0;
-
-        }
-
-        .about-me .endabelyu {
-            font-weight: 600;
-            font-size: 1em;
-        }
-
-        .about-me .front-end {
-            color: black;
-            font-weight: 600;
-            font-size: 1.3em;
-
-
-        }
-
-        .about-me p {
-            font-size: 16px;
-            font-weight: light;
-            text-align: left;
-            color: white;
-        }
+    .header {
+        grid-template-areas: 'navbar'
+            'about'
+            'hero';
+        grid-template-columns: 1fr;
+        padding-top: 25px;
+        height: 130vh;
     }
+
+    .hero {
+        min-height: 400px;
+        margin-top: 30px;
+
+    }
+
+    .about-me {
+        grid-area: hero;
+        width: 100%;
+        padding: 0 0 0 10px;
+
+    }
+
+    .about-me .endabelyu {
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    .about-me .front-end {
+        color: black;
+        font-weight: 600;
+        font-size: 1.3em;
+
+
+    }
+
+    .about-me p {
+        font-size: 16px;
+        font-weight: light;
+        text-align: left;
+        color: white;
+    }
+
+    .container-project {
+        grid-template-columns: 1fr;
+        column-gap: none;
+    }
+
+    .project1,
+    .project2 {
+        letter-spacing: 3px;
+        font-size: 1em;
+        font-weight: 300;
+        border-radius: 5px;
+        height: 513px;
+        width: 370px;
+        background-color: rgb(51, 48, 65);
+        margin-bottom: 25px;
+        /* color: rgb(197, 194, 194); */
+        cursor: pointer;
+    }
+
+    .project3,
+    .project4 {
+        letter-spacing: 3px;
+        font-size: 1em;
+        font-weight: 300;
+        border-radius: 5px;
+        height: 513px;
+        width: 370px;
+        background-color: black;
+        margin-bottom: 10px;
+        /* color: rgb(197, 194, 194); */
+        cursor: pointer;
+    }
+
+}
