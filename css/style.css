@@ -655,7 +655,7 @@ nav.sticky {
 
 
 
-@media (max-width: 568px) {
+@media (max-width: 600px) {
     .navbar {
 
         background-color: rgb(89, 79, 226);
