@@ -218,9 +218,9 @@ nav.sticky {
 .container-project {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    column-gap: 30px;
-    row-gap: 20px;
-    padding: 10px;
+    column-gap: 60px;
+    row-gap: 40px;
+    padding: px;
     margin-left: 15px;
     justify-content: center;
     align-items: center;
@@ -621,6 +621,39 @@ nav.sticky {
 
     }
 
+    .container-project {
+        grid-template-columns: 1fr;
+        column-gap: none;
+    }
+
+    .project1,
+    .project2 {
+        letter-spacing: 3px;
+        font-size: 1em;
+        font-weight: 300;
+        border-radius: 5px;
+        height: 513px;
+        width: 300px;
+        background-color: rgb(51, 48, 65);
+        margin-bottom: 25px;
+        /* color: rgb(197, 194, 194); */
+        cursor: pointer;
+    }
+
+    .project3,
+    .project4 {
+        letter-spacing: 3px;
+        font-size: 1em;
+        font-weight: 300;
+        border-radius: 5px;
+        height: 513px;
+        width: 300px;
+        background-color: black;
+        margin-bottom: 10px;
+        /* color: rgb(197, 194, 194); */
+        cursor: pointer;
+    }
+
 
 }
 
@@ -723,7 +756,7 @@ nav.sticky {
         font-weight: 300;
         border-radius: 5px;
         height: 513px;
-        width: 370px;
+        width: 300px;
         background-color: rgb(51, 48, 65);
         margin-bottom: 25px;
         /* color: rgb(197, 194, 194); */
@@ -737,7 +770,7 @@ nav.sticky {
         font-weight: 300;
         border-radius: 5px;
         height: 513px;
-        width: 370px;
+        width: 300px;
         background-color: black;
         margin-bottom: 10px;
         /* color: rgb(197, 194, 194); */
