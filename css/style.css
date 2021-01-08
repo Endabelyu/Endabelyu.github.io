@@ -124,7 +124,7 @@ nav.sticky {
     height: 3px;
     border-radius: 3px;
     background-color: rgb(223, 219, 219);
-    transition: all .3s;
+    transition: .3s;
 
 }
 
@@ -255,7 +255,7 @@ nav.sticky {
     position: absolute;
     align-content: center;
     justify-content: center;
-    z-index: 5;
+    z-index: 1;
     text-decoration: none;
 }
 
@@ -302,7 +302,7 @@ nav.sticky {
     position: absolute;
     align-content: center;
     justify-content: center;
-    z-index: 5;
+    z-index: 1;
 
 }
 
@@ -342,7 +342,7 @@ nav.sticky {
     position: absolute;
     align-content: center;
     justify-content: center;
-    z-index: 5;
+    z-index: 1;
 
 }
 
@@ -367,7 +367,7 @@ nav.sticky {
     position: absolute;
     align-content: center;
     justify-content: center;
-    z-index: 5;
+    z-index: 1;
 
 }
 
@@ -586,7 +586,7 @@ nav.sticky {
         z-index: -2;
         opacity: .9;
         transform: translate(100%);
-        transition: all 1s;
+        transition: all .3s;
         opacity: 0;
 
     }
@@ -661,7 +661,7 @@ nav.sticky {
 
 
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .navbar {
         /* background-color: rgb(142, 79, 243); */
         background-color: rgb(89, 79, 226);
@@ -684,7 +684,7 @@ nav.sticky {
         z-index: -2;
         opacity: .9;
         transform: translate(100%);
-        transition: all 1s;
+        transition: all .3s;
         opacity: 0;
 
     }
@@ -777,4 +777,161 @@ nav.sticky {
         cursor: pointer;
     }
 
+}
+
+
+@media (max-width: 568px) {
+    .navbar {
+        /* background-color: rgb(142, 79, 243); */
+        background-color: rgb(89, 79, 226);
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-evenly;
+        right: 0;
+        top: 0;
+        height: 130vh;
+        /* background-color: rgba(105, 21, 241, 0.9); */
+        background-color: rgb(89, 79, 226);
+        ;
+        ;
+        width: 80%;
+        color: whitesmoke;
+        margin-right: 0;
+        z-index: -2;
+        opacity: .9;
+        transform: translate(100%);
+        transition: all .25s;
+        opacity: 0;
+
+    }
+
+    nav ul.slide {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    .menu-toogle {
+        display: flex;
+    }
+
+    .menu-toogle span {
+        margin-right: 20px;
+    }
+
+    .header {
+        grid-template-areas: 'navbar'
+            'about'
+            'hero';
+        grid-template-columns: 1fr;
+        padding-top: 25px;
+        height: 145vh;
+    }
+
+    .hero {
+        min-height: 400px;
+        margin: 10px 0px 0 0;
+        width: 280px;
+
+    }
+
+    .about-me {
+        grid-area: hero;
+        width: 100%;
+        padding: 0 0 0 10px;
+
+    }
+
+    .about-me .endabelyu {
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    .about-me .front-end {
+        color: black;
+        font-weight: 600;
+        font-size: 1.3em;
+
+
+    }
+
+    .about-me p {
+        font-size: 16px;
+        font-weight: light;
+        text-align: left;
+        color: white;
+    }
+
+    .project {
+        margin-bottom: 50px;
+    }
+
+    .container-project {
+        grid-template-columns: 1fr;
+        column-gap: none;
+    }
+
+    .project h2 {
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-left: -30px;
+    }
+
+    .project1,
+    .project2 {
+        letter-spacing: 2px;
+        font-size: 1em;
+        font-weight: 300;
+        border-radius: 5px;
+        height: 513px;
+        width: 280px;
+        background-color: rgb(51, 48, 65);
+        margin: 0 15px -15px 0;
+        cursor: pointer;
+
+        padding: 0 0 0 0;
+
+
+    }
+
+    .project3,
+    .project4 {
+        letter-spacing: 3px;
+        font-size: 1em;
+        font-weight: 300;
+        border-radius: 5px;
+        height: 513px;
+        width: 280px;
+        background-color: black;
+        margin: 0 15px -15px 0;
+        /* color: rgb(197, 194, 194); */
+        cursor: pointer;
+
+
+    }
+
+    .project1 p,
+    .project2 p,
+    .project3 p,
+    .project4 p {
+        padding: 0;
+        margin: 20px 0 0 20px;
+    }
+
+    .project1 span,
+    .project2 span,
+    .project3 span,
+    .project4 span {
+        font-size: 1em;
+        font-weight: 600;
+        font-family: 'Monstserrat', sans-serif;
+        color: rgb(107, 110, 252);
+    }
+
+
+    .project p a {
+        margin-right: 100px;
+    }
 }
