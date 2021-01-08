@@ -506,7 +506,137 @@ nav.sticky {
 }
 
 /* responsive breakpoint*/
+/* landscape tablet */
+@media screen and (max-width:1024px) {
+    .project p a {
+        font-size: .9em;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 10px;
+        line-height: 30px;
+    }
 
+    .project .fa-link {
+        font-size: 1.2em;
+
+    }
+
+    .project .fa-book {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:1024px) and (height:1366px) {
+    .header {
+        margin: 0 0px -50px 0;
+        padding: 0 10px 0 0;
+        height: 70vh;
+
+    }
+
+    .hero {
+        height: 50vmax;
+        margin-bottom: 0;
+        width: 30vmax;
+    }
+
+    .about-me {
+        margin: 20px 0 0 10px;
+        padding: 0 0 0 5px;
+        width: 20vmax;
+    }
+
+    .about-me .endabelyu {
+        font-weight: 600;
+        font-size: 3vw;
+        color: #eff8ff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    }
+
+    .about-me .front-end {
+        color: black;
+        font-weight: 700;
+        font-size: 4.5vw;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
+        width: 30vmax;
+    }
+
+    .about-me p {
+        width: 35vmax;
+        margin-top: 20px;
+        line-height: 40px;
+        font-size: 2.5vw;
+        font-family: Helvetica, sans-serif, sans-serif;
+        font-weight: 400;
+        text-align: left;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+        color: rgb(255, 255, 255);
+
+    }
+
+    .project h2 {
+        margin-bottom: 20px;
+        font-size: 5vw;
+        text-transform: none;
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        height: 80vmax;
+        width: 60vmax;
+    }
+
+    .project1 img,
+    .project2 img,
+    .project3 img,
+    .project4 img {
+        height: 80vmax;
+        width: 60vmax;
+    }
+
+    .project1 p,
+    .project2 p,
+    .project3 p,
+    .project4 p {
+        margin: 50px 0 0 50px;
+        font-size: 1.5em;
+
+    }
+
+    .project1 span,
+    .project2 span,
+    .project3 span,
+    .project4 span {
+        margin: 10px 0 10px 0;
+        font-size: 2.5em;
+        font-weight: 600;
+
+    }
+
+    .project p a {
+        font-size: .9em;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 10px;
+        line-height: 30px;
+    }
+
+    .project .fa-link {
+        font-size: 1.2em;
+
+    }
+
+    .project .fa-book {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+/* tablet */
 
 @media screen and (max-width: 800px) {
     .navbar {
@@ -550,7 +680,7 @@ nav.sticky {
         margin: 0 0 -30px 0;
         padding: 0;
         height: 85vh;
-        wid
+
     }
 
     .hero {
@@ -560,7 +690,7 @@ nav.sticky {
     }
 
     .about-me {
-        margin: 0 0 0 10px;
+        margin: 20 0 0 10px;
         padding: 0 0 0 5px;
         width: 20vmax;
     }
@@ -700,7 +830,6 @@ nav.sticky {
         margin: 0 0 -30px 0;
         padding: 0;
         height: 85vh;
-        wid
     }
 
     .hero {
@@ -710,7 +839,7 @@ nav.sticky {
     }
 
     .about-me {
-        margin: 0 0 0 10px;
+        margin: 20 0 0 10px;
         padding: 0 0 0 5px;
         width: 20vmax;
     }
@@ -799,5 +928,125 @@ nav.sticky {
 
     .project .fa-book {
         font-size: 2.5vw;
+    }
+}
+
+/* mobile */
+@media (max-width: 420px) {
+
+    .header {
+        grid-template-areas:
+            'navbar '
+            'about'
+            'hero';
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        margin: 0 0 25px 0;
+        height: 110vh;
+        padding-top: 50px;
+        padding-left: 5px;
+
+    }
+
+    .hero {
+        height: 55vmax;
+        margin-bottom: 0;
+        width: 49vmax;
+        overflow: hidden;
+    }
+
+    .about-me {
+        margin: 0 0 0 10px;
+        padding: 0 0 0 5px;
+        width: 35vmax;
+    }
+
+    .about-me .endabelyu {
+        font-weight: 600;
+        font-size: 1.3em;
+        color: #eff8ff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+
+
+    }
+
+    .about-me .front-end {
+        color: black;
+        font-weight: 700;
+        font-size: 1.7em;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
+        width: 45vmax;
+
+    }
+
+    .about-me p {
+        width: 45vmax;
+        margin-top: 20px;
+        line-height: 28px;
+        font-size: .9em;
+        font-family: Helvetica, sans-serif, sans-serif;
+        font-weight: 400;
+        text-align: left;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+        color: rgb(255, 255, 255);
+
+    }
+
+    .project {}
+
+    .project h2 {
+        margin-bottom: 20px;
+        font-size: 5vw;
+        text-transform: none;
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        height: 80vmax;
+        width: 60vmax;
+    }
+
+    .project1 img,
+    .project2 img,
+    .project3 img,
+    .project4 img {
+        height: 80vmax;
+        width: 60vmax;
+    }
+
+    .project1 p,
+    .project2 p,
+    .project3 p,
+    .project4 p {
+        margin: 50px 0 0 50px;
+
+
+    }
+
+    .project1 span,
+    .project2 span,
+    .project3 span,
+    .project4 span {
+        margin: 10px 0 10px 0;
+        font-size: 4.5vw;
+        font-weight: 600;
+
+    }
+
+    .project p a {
+        font-size: .6em;
+        margin-left: 0;
+        padding-left: 0%;
+    }
+
+    .project .fa-link {
+        font-size: 1em;
+
+    }
+
+    .project .fa-book {
+        font-size: 1em;
     }
 }
