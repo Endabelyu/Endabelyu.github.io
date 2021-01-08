@@ -144,33 +144,32 @@ nav.sticky {
     justify-content: space-evenly;
     gap: 20px;
     position: relative;
-    margin-bottom: 20px;
+    padding: 0;
+    margin: -40px 0 40px 0;
     font-size: 1em;
 
 }
 
 .hero {
     grid-area: about;
-    min-height: 530px;
+    min-height: 12vmax;
     background-image: url(../Img/baymax.gif);
     background-size: cover;
     background-position: center;
-    padding: 50px 20px 0 0;
+    padding: 30px 20px 0 0;
 
 }
 
 .about-me {
     grid-area: hero;
-    width: 100%;
-    min-height: 530px;
-    padding: 77px 0 0 20px;
-    /* background-color: blanchedalmond; */
+    min-height: 12vmax;
+    padding: 57px 0 0 20px;
 }
 
 .about-me .endabelyu {
     font-weight: 600;
-    font-size: 30px;
-    color: # eff8ff;
+    font-size: 2.5vw;
+    color: #eff8ff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
 
 
@@ -179,20 +178,21 @@ nav.sticky {
 .about-me .front-end {
     color: black;
     font-weight: 600;
-    font-size: 46px;
+    font-size: 3.5vw;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
 
 }
 
 .about-me p {
-
+    width: 48vmax;
+    margin-top: 20px;
     line-height: 30px;
-    font-size: 1em;
+    font-size: 1.5vw;
     font-family: Helvetica, sans-serif, sans-serif;
-    font-weight: bolder;
+    font-weight: 300;
     text-align: left;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
-    color: white;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -203,27 +203,25 @@ nav.sticky {
     /* text-align: center; */
     min-height: 80vmax;
     /* background-color: yellowgreen; */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: white;
 }
 
 .project h2 {
-    text-transform: uppercase;
-    font-size: 3.2em;
+
+    font-size: 4vw;
     text-align: left;
     padding: 20px;
     letter-spacing: 2px;
 }
 
 .container-project {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    column-gap: 60px;
-    row-gap: 40px;
-    padding: px;
-    margin-left: 15px;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    margin: 0 0 0 px;
+    /* padding: 30px; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 
 }
 
@@ -237,19 +235,23 @@ nav.sticky {
 
 .project1,
 .project2 {
+    display: block;
     letter-spacing: 3px;
     font-size: 1em;
     font-weight: 300;
     border-radius: 5px;
-    height: 713px;
-    width: 570px;
+    height: 55vmax;
+    width: 45vmax;
     background-color: rgb(51, 48, 65);
-    margin-bottom: 25px;
     /* color: rgb(197, 194, 194); */
     cursor: pointer;
+    margin: 0 0 20px 0;
 }
 
-.project1 p {
+.project1 p,
+.project2 p,
+.project3 p,
+.project4 p {
     margin: 50px 0 0 50px;
     /* background-color: white; */
     position: absolute;
@@ -260,7 +262,7 @@ nav.sticky {
 }
 
 .project p a {
-    font-size: 14px;
+    font-size: 1vw;
     color: white;
     padding-left: 5px;
     padding-right: 15px;
@@ -274,16 +276,19 @@ nav.sticky {
 }
 
 .project .fa-link {
-    font-size: 1em;
+    font-size: 1vw;
 
 }
 
 .project .fa-book {
-    font-size: 1em;
+    font-size: 1vw;
 }
 
-.project1 span {
-    font-size: 35px;
+.project1 span,
+.project2 span,
+.project3 span,
+.project4 span {
+    font-size: 2.5vw;
     font-weight: 600;
     color: rgb(107, 110, 252);
     font-family: 'Monstserrat', sans-serif;
@@ -291,32 +296,17 @@ nav.sticky {
 
 .project1 img {
     border-radius: inherit;
-    height: 713px;
-    width: 570px;
+    height: 55vmax;
+    width: 45vmax;
     object-fit: cover;
 }
 
-.project2 p {
-    margin: 50px 0 0 50px;
-    /* background-color: white; */
-    position: absolute;
-    align-content: center;
-    justify-content: center;
-    z-index: 1;
 
-}
-
-.project2 span {
-    color: rgb(107, 110, 252);
-    font-size: 35px;
-    font-weight: 600;
-    font-family: 'Monstserrat', sans-serif;
-}
 
 .project2 img {
     border-radius: inherit;
-    height: 713px;
-    width: 570px;
+    height: 55vmax;
+    width: 45vmax;
     object-fit: cover;
 }
 
@@ -324,64 +314,32 @@ nav.sticky {
 
 .project3,
 .project4 {
+    display: block;
     letter-spacing: 3px;
     font-size: 1em;
     font-weight: 300;
     border-radius: 5px;
-    height: 713px;
-    width: 570px;
+    height: 55vmax;
+    width: 45vmax;
     background-color: black;
-    margin-bottom: 10px;
-    /* color: rgb(197, 194, 194); */
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
-.project3 p {
-    margin: 50px 0 0 50px;
-    /* background-color: white; */
-    position: absolute;
-    align-content: center;
-    justify-content: center;
-    z-index: 1;
-
-}
-
-.project3 span {
-    font-size: 35px;
-    font-weight: 600;
-    font-family: 'Monstserrat', sans-serif;
-    color: rgb(107, 110, 252);
-}
 
 .project3 img {
     border-radius: inherit;
-    height: 713px;
-    width: 570px;
+    height: 55vmax;
+    width: 45vmax;
     object-fit: cover;
 }
 
 
-.project4 p {
-    margin: 50px 0 0 50px;
-    /* background-color: white; */
-    position: absolute;
-    align-content: center;
-    justify-content: center;
-    z-index: 1;
-
-}
-
-.project4 span {
-    font-size: 35px;
-    font-weight: 600;
-    font-family: 'Monstserrat', sans-serif;
-    color: rgb(107, 110, 252);
-}
 
 .project4 img {
     border-radius: inherit;
-    height: 713px;
-    width: 570px;
+    height: 55vmax;
+    width: 45vmax;
     object-fit: cover;
 }
 
@@ -394,33 +352,18 @@ nav.sticky {
 
 .project2 img:hover {
     opacity: .4;
-    zoom: 1.2;
+
 }
 
 .project3 img:hover {
     opacity: .4;
-    zoom: 1.2;
+
 }
 
 .project4 img:hover {
     opacity: .4;
-    zoom: 1.2;
+
 }
-
-
-
-
-
-
-/* .project1 {
-    background-image: url(""../../../Project coding/baymax/baymax2.gif");
-} */
-
-
-/* .project1,
-.project2,
-.project3, */
-
 
 /* skill */
 .skill {
@@ -480,7 +423,7 @@ nav.sticky {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     min-height: 200px;
     text-align: center;
     margin-bottom: 20px;
@@ -567,7 +510,6 @@ nav.sticky {
 
 @media screen and (max-width: 800px) {
     .navbar {
-        /* background-color: rgb(142, 79, 243); */
         background-color: rgb(89, 79, 226);
     }
 
@@ -578,7 +520,7 @@ nav.sticky {
         right: 0;
         top: 0;
         height: 100vh;
-        /* background-color: rgba(105, 21, 241, 0.9); */
+
         background-color: rgb(89, 79, 226);
         width: 80%;
         color: whitesmoke;
@@ -586,7 +528,7 @@ nav.sticky {
         z-index: -2;
         opacity: .9;
         transform: translate(100%);
-        transition: all .3s;
+        transition: all .4s;
         opacity: 0;
 
     }
@@ -605,184 +547,117 @@ nav.sticky {
     }
 
     .header {
-        grid-template-areas: 'navbar'
-            'about'
-            'hero';
-        grid-template-columns: 1fr;
-        padding-top: 25px;
-        height: 130vh;
-        about
-    }
-
-    .about-me {
-        grid-area: hero;
-        width: 100%;
-        padding: 0 0 0 10px;
-
-    }
-
-    .container-project {
-        grid-template-columns: 1fr;
-        column-gap: none;
-    }
-
-    .project1,
-    .project2 {
-        letter-spacing: 3px;
-        font-size: 1em;
-        font-weight: 300;
-        border-radius: 5px;
-        height: 513px;
-        width: 300px;
-        background-color: rgb(51, 48, 65);
-        margin-bottom: 25px;
-        /* color: rgb(197, 194, 194); */
-        cursor: pointer;
-    }
-
-    .project3,
-    .project4 {
-        letter-spacing: 3px;
-        font-size: 1em;
-        font-weight: 300;
-        border-radius: 5px;
-        height: 513px;
-        width: 300px;
-        background-color: black;
-        margin-bottom: 10px;
-        /* color: rgb(197, 194, 194); */
-        cursor: pointer;
-    }
-
-
-}
-
-
-
-
-
-@media (max-width: 600px) {
-    .navbar {
-        /* background-color: rgb(142, 79, 243); */
-        background-color: rgb(89, 79, 226);
-    }
-
-    nav ul {
-        flex-direction: column;
-        position: absolute;
-        justify-content: space-evenly;
-        right: 0;
-        top: 0;
-        height: 100vh;
-        /* background-color: rgba(105, 21, 241, 0.9); */
-        background-color: rgb(89, 79, 226);
-        ;
-        ;
-        width: 80%;
-        color: whitesmoke;
-        margin-right: 0;
-        z-index: -2;
-        opacity: .9;
-        transform: translate(100%);
-        transition: all .3s;
-        opacity: 0;
-
-    }
-
-    nav ul.slide {
-        transform: translate(0);
-        opacity: 1;
-    }
-
-    .menu-toogle {
-        display: flex;
-    }
-
-    .menu-toogle span {
-        margin-right: 20px;
-    }
-
-    .header {
-        grid-template-areas: 'navbar'
-            'about'
-            'hero';
-        grid-template-columns: 1fr;
-        padding-top: 25px;
-        height: 130vh;
+        margin: 0 0 -30px 0;
+        padding: 0;
+        height: 85vh;
+        wid
     }
 
     .hero {
-        min-height: 400px;
-        margin-top: 30px;
-
+        height: 50vmax;
+        margin-bottom: 0;
+        width: 28vmax;
     }
 
     .about-me {
-        grid-area: hero;
-        width: 100%;
-        padding: 0 0 0 10px;
-
+        margin: 0 0 0 10px;
+        padding: 0 0 0 5px;
+        width: 20vmax;
     }
 
     .about-me .endabelyu {
         font-weight: 600;
-        font-size: 1em;
+        font-size: 3vw;
+        color: #eff8ff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+
+
     }
 
     .about-me .front-end {
         color: black;
-        font-weight: 600;
-        font-size: 1.3em;
-
-
+        font-weight: 700;
+        font-size: 4.5vw;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
+        width: 30vmax;
     }
 
     .about-me p {
-        font-size: 16px;
-        font-weight: light;
+        width: 35vmax;
+        margin-top: 20px;
+        line-height: 28px;
+        font-size: 2.5vw;
+        font-family: Helvetica, sans-serif, sans-serif;
+        font-weight: 400;
         text-align: left;
-        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+        color: rgb(255, 255, 255);
+
     }
 
-    .container-project {
-        grid-template-columns: 1fr;
-        column-gap: none;
+    .project {}
+
+    .project h2 {
+        margin-bottom: 20px;
+        font-size: 5vw;
+        text-transform: none;
     }
 
     .project1,
-    .project2 {
-        letter-spacing: 3px;
-        font-size: 1em;
-        font-weight: 300;
-        border-radius: 5px;
-        height: 513px;
-        width: 300px;
-        background-color: rgb(51, 48, 65);
-        margin-bottom: 25px;
-        /* color: rgb(197, 194, 194); */
-        cursor: pointer;
-    }
-
+    .project2,
     .project3,
     .project4 {
-        letter-spacing: 3px;
-        font-size: 1em;
-        font-weight: 300;
-        border-radius: 5px;
-        height: 513px;
-        width: 300px;
-        background-color: black;
-        margin-bottom: 10px;
-        /* color: rgb(197, 194, 194); */
-        cursor: pointer;
+        height: 80vmax;
+        width: 60vmax;
     }
 
+    .project1 img,
+    .project2 img,
+    .project3 img,
+    .project4 img {
+        height: 80vmax;
+        width: 60vmax;
+    }
+
+    .project1 p,
+    .project2 p,
+    .project3 p,
+    .project4 p {
+        margin: 50px 0 0 50px;
+
+
+    }
+
+    .project1 span,
+    .project2 span,
+    .project3 span,
+    .project4 span {
+        margin: 10px 0 10px 0;
+        font-size: 4.5vw;
+        font-weight: 600;
+
+    }
+
+    .project p a {
+        font-size: 2vw;
+    }
+
+    .project .fa-link {
+        font-size: 2.5vw;
+
+    }
+
+    .project .fa-book {
+        font-size: 2.5vw;
+    }
 }
+
+
 
 
 @media (max-width: 568px) {
     .navbar {
-        /* background-color: rgb(142, 79, 243); */
+
         background-color: rgb(89, 79, 226);
     }
 
@@ -793,7 +668,7 @@ nav.sticky {
         right: 0;
         top: 0;
         height: 130vh;
-        /* background-color: rgba(105, 21, 241, 0.9); */
+
         background-color: rgb(89, 79, 226);
         ;
         ;
@@ -822,116 +697,107 @@ nav.sticky {
     }
 
     .header {
-        grid-template-areas: 'navbar'
-            'about'
-            'hero';
-        grid-template-columns: 1fr;
-        padding-top: 25px;
-        height: 145vh;
+        margin: 0 0 -30px 0;
+        padding: 0;
+        height: 85vh;
+        wid
     }
 
     .hero {
-        min-height: 400px;
-        margin: 10px 0px 0 0;
-        width: 280px;
-
+        height: 50vmax;
+        margin-bottom: 0;
+        width: 28vmax;
     }
 
     .about-me {
-        grid-area: hero;
-        width: 100%;
-        padding: 0 0 0 10px;
-
+        margin: 0 0 0 10px;
+        padding: 0 0 0 5px;
+        width: 20vmax;
     }
 
     .about-me .endabelyu {
         font-weight: 600;
-        font-size: 1em;
+        font-size: 3vw;
+        color: #eff8ff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+
+
     }
 
     .about-me .front-end {
         color: black;
-        font-weight: 600;
-        font-size: 1.3em;
-
-
+        font-weight: 700;
+        font-size: 4.5vw;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
+        width: 30vmax;
     }
 
     .about-me p {
-        font-size: 16px;
-        font-weight: light;
+        width: 35vmax;
+        margin-top: 20px;
+        line-height: 28px;
+        font-size: 2.5vw;
+        font-family: Helvetica, sans-serif, sans-serif;
+        font-weight: 400;
         text-align: left;
-        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+        color: rgb(255, 255, 255);
+
     }
 
-    .project {
-        margin-bottom: 50px;
-    }
-
-    .container-project {
-        grid-template-columns: 1fr;
-        column-gap: none;
-    }
+    .project {}
 
     .project h2 {
-        font-size: 1.3em;
-        font-weight: 600;
-        margin-left: -30px;
+        margin-bottom: 20px;
+        font-size: 5vw;
+        text-transform: none;
     }
 
     .project1,
-    .project2 {
-        letter-spacing: 2px;
-        font-size: 1em;
-        font-weight: 300;
-        border-radius: 5px;
-        height: 513px;
-        width: 280px;
-        background-color: rgb(51, 48, 65);
-        margin: 0 15px -15px 0;
-        cursor: pointer;
-
-        padding: 0 0 0 0;
-
-
-    }
-
+    .project2,
     .project3,
     .project4 {
-        letter-spacing: 3px;
-        font-size: 1em;
-        font-weight: 300;
-        border-radius: 5px;
-        height: 513px;
-        width: 280px;
-        background-color: black;
-        margin: 0 15px -15px 0;
-        /* color: rgb(197, 194, 194); */
-        cursor: pointer;
+        height: 80vmax;
+        width: 60vmax;
+    }
 
-
+    .project1 img,
+    .project2 img,
+    .project3 img,
+    .project4 img {
+        height: 80vmax;
+        width: 60vmax;
     }
 
     .project1 p,
     .project2 p,
     .project3 p,
     .project4 p {
-        padding: 0;
-        margin: 20px 0 0 20px;
+        margin: 50px 0 0 50px;
+
+
     }
 
     .project1 span,
     .project2 span,
     .project3 span,
     .project4 span {
-        font-size: 1em;
+        margin: 10px 0 10px 0;
+        font-size: 4.5vw;
         font-weight: 600;
-        font-family: 'Monstserrat', sans-serif;
-        color: rgb(107, 110, 252);
+
     }
 
-
     .project p a {
-        margin-right: 100px;
+        font-size: 2vw;
+    }
+
+    .project .fa-link {
+        font-size: 2.5vw;
+
+    }
+
+    .project .fa-book {
+        font-size: 2.5vw;
     }
 }
