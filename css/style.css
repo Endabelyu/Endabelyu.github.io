@@ -399,25 +399,25 @@ nav.sticky {
 
 .container-skill .icon1 {
     display: flex;
-    justify-content: center;
-    width: 70vmax;
+    justify-content: space-around;
+    width: 40vmax;
     /* background-color: white; */
-    margin: 0 10px 20px 10px;
-    background-color: tomato;
-
+    margin: 0 40px 0px 0px;
+    /* background-color: tomato; */
+    padding: 0;
 }
 
 .container-skill .icon2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 0 0px 0px 40px;
     /* background-color: white; */
-    width: 70vmax;
-    background-color: tomato;
+    width: 40vmax;
 }
 
 .container-skill a img {
-    width: 13vmax;
-    padding: 10px;
+    width: 12vmax;
+    padding: 15px;
 
 
 }
@@ -690,6 +690,35 @@ nav.sticky {
         flex: 50%;
         max-width: 20vmax;
     }
+
+    .container-skill .icon1 {
+        display: flex;
+        justify-content: space-around;
+        width: 40vmax;
+        /* background-color: white; */
+        margin: 0 0px 10px 0px;
+        /* background-color: tomato; */
+        padding: 0;
+        /* background-color: white; */
+    }
+
+    .container-skill .icon2 {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0px 0px 0px;
+        /* background-color: white; */
+        width: 40vmax;
+    }
+
+    .container-skill a img {
+        width: 14vmax;
+        padding: 15px;
+    }
+
+    .gallery h2 {
+        font-size: 2.5em;
+        margin: 25px;
+    }
 }
 
 
@@ -700,7 +729,6 @@ nav.sticky {
 @media screen and (max-width: 800px) {
     .project p a:hover {
         color: white;
-
     }
 
     .navbar {
@@ -714,7 +742,6 @@ nav.sticky {
         right: 0;
         top: 0;
         height: 100vh;
-
         background-color: rgb(89, 79, 226);
         width: 80%;
         color: whitesmoke;
@@ -724,7 +751,6 @@ nav.sticky {
         transform: translate(100%);
         transition: all .4s;
         opacity: 0;
-
     }
 
     nav ul.slide {
@@ -744,7 +770,6 @@ nav.sticky {
         margin: 0 0 -30px 0;
         padding: 0;
         height: 85vh;
-
     }
 
     .hero {
@@ -818,8 +843,6 @@ nav.sticky {
     .project3 p,
     .project4 p {
         margin: 50px 0 0 50px;
-
-
     }
 
     .project1 span,
@@ -829,7 +852,6 @@ nav.sticky {
         margin: 10px 0 10px 0;
         font-size: 4.5vw;
         font-weight: 600;
-
     }
 
     .project p a {
@@ -849,6 +871,39 @@ nav.sticky {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 20vmax;
+    }
+
+    .skill .TS {
+        font-size: 35px;
+    }
+
+    .container-skill .icon1 {
+        display: flex;
+        justify-content: space-around;
+        width: 40vmax;
+        /* background-color: white; */
+        margin: 0 0px 0px 0px;
+        /* background-color: tomato; */
+        padding: 0;
+        /* background-color: white; */
+    }
+
+    .container-skill .icon2 {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0px 0px 0px;
+        /* background-color: white; */
+        width: 40vmax;
+    }
+
+    .container-skill a img {
+        width: 16vmax;
+        padding: 15px;
+    }
+
+    .gallery h2 {
+        font-size: 35px;
+        margin: 20px;
     }
 }
 
@@ -1005,6 +1060,34 @@ nav.sticky {
         flex: 100%;
         max-width: 100%;
     }
+
+    .skill .TS {
+        font-size: 25px;
+    }
+
+    .container-skill .icon1 {
+        display: flex;
+        justify-content: space-around;
+        width: 40vmax;
+        /* background-color: white; */
+        margin: 0 0px 0px 0px;
+        /* background-color: tomato; */
+        padding: 0;
+        /* background-color: white; */
+    }
+
+    .container-skill .icon2 {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0px 0px 0px;
+        /* background-color: white; */
+        width: 40vmax;
+    }
+
+    .container-skill a img {
+        width: 16vmax;
+        padding: 15px;
+    }
 }
 
 /* mobile */
@@ -1134,6 +1217,34 @@ nav.sticky {
         width: 90px;
         padding: 10px;
     }
+
+    .skill .TS {
+        font-size: 25px;
+    }
+
+    .container-skill .icon1 {
+        display: flex;
+        justify-content: space-around;
+        width: 40vmax;
+        /* background-color: white; */
+        margin: 0 0px 0px 0px;
+        /* background-color: tomato; */
+        padding: 0;
+        /* background-color: white; */
+    }
+
+    .container-skill .icon2 {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0px 0px 0px;
+        /* background-color: white; */
+        width: 40vmax;
+    }
+
+    .container-skill a img {
+        width: 12.5vmax;
+        padding: 15px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -1231,5 +1342,33 @@ nav.sticky {
     .container-skill a img {
         width: 72px;
         padding: 10px;
+    }
+
+    .skill .TS {
+        font-size: 30px;
+    }
+
+    .container-skill .icon1 {
+        display: flex;
+        justify-content: space-around;
+        width: 40vmax;
+        /* background-color: white; */
+        margin: 0 0px 0px 0px;
+        /* background-color: tomato; */
+        padding: 0;
+        /* background-color: white; */
+    }
+
+    .container-skill .icon2 {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0px 0px 0px;
+        /* background-color: white; */
+        width: 40vmax;
+    }
+
+    .container-skill a img {
+        width: 13vmax;
+        padding: 15px;
     }
 }
