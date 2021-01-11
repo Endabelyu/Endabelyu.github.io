@@ -509,7 +509,8 @@ nav.sticky {
     justify-content: center;
     align-items: center;
     margin-top: 120px;
-    margin-left: -50px;
+    margin-left: -20px;
+    letter-spacing: 1px;
     /* background-color: #fff; */
 }
 
@@ -1603,6 +1604,38 @@ twitter:hover {
         font-size: 14px;
         font-weight: ;
         margin: 0px 0 0 0;
+    }
+}
+
+@media (max-width: 386px) {
+    .footer {
+        width: 55vmax;
+    }
+
+    .businness {
+        /* background-color: #fff; */
+        width: 85%;
+    }
+
+    /* .businness h2 {
+        background-color: #fff;
+        padding-left: 25px;
+    } */
+
+    .socmed {
+        /* background-color: blanchedalmond; */
+        margin-top: -10px;
+    }
+
+    .socmed h2 {
+        /* background-color: blue; */
+        margin-left: 20px;
+    }
+
+    .copy {
+        /* background-color: blueviolet; */
+        margin-top: 35px;
+        margin-left: 35px;
     }
 }
 
