@@ -1554,6 +1554,7 @@ twitter:hover {
         height: 30px;
         text-align: left;
         letter-spacing: 2px;
+        margin-left: 20px;
     }
 
     .gambar {
@@ -1584,7 +1585,7 @@ twitter:hover {
         grid-area: email;
         display: flex;
         /* background-color: rosybrown; */
-        width: 40vmax;
+        width: 41vmax;
         padding: 10px 0 0 0px;
         margin: 0 0px 20px 30px;
         height: 60px;
@@ -1750,7 +1751,7 @@ twitter:hover {
 
 
     .container-skill a img {
-        width: 12vmax;
+        width: 11vmax;
         padding: 15px;
     }
 
@@ -1789,15 +1790,18 @@ twitter:hover {
     }
 
     .socmed h2 {
-        font-size: 20px;
+        font-size: 18px;
         display: block;
-        width: 100%;
+        width: 80vmax;
         text-align: left;
         padding: 0 0 0px 0px;
         font-weight: 300;
         height: 30px;
         text-align: left;
         letter-spacing: 2px;
+        margin-right: 20px;
+        margin-left: -0px;
+        /* background-color: red; */
     }
 
     .gambar {
@@ -1852,6 +1856,16 @@ twitter:hover {
     }
 }
 
+
+@media (max-width:355px) {
+    body {
+        margin-right: 10px;
+    }
+
+    .contact {
+        margin-left: 3px;
+    }
+}
 
 @media (max-width:320px) {
     nav ul {
