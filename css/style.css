@@ -1789,6 +1789,15 @@ twitter:hover {
 }
 
 @media (max-width: 386px) {
+
+    .contact .btn {
+        margin-top: 30px;
+    }
+
+    .work h2 {
+        font-size: 24px;
+    }
+
     .footer {
         width: 55vmax;
     }
