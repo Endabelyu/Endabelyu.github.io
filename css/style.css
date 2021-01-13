@@ -435,12 +435,18 @@ nav.sticky {
     margin: 20px;
 }
 
+.big-column {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
 .column {
 
     display: block;
-    -ms-flex: 35%;
+    -ms-flex: 25%;
     /* IE10 */
-    flex: 35%;
+    flex: 25%;
     max-width: 30vmax;
     margin: 0;
     padding: 0;
@@ -450,33 +456,116 @@ nav.sticky {
     border: 1px solid rgb(255, 255, 255);
     margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
-    margin-bottom: 15px;
+    width: 96%;
+    margin-bottom: 3px;
     border-radius: 5px;
 }
 
 /* contact */
 .contact {
-
     display: flex;
-    margin: 0 0px 0 35px;
-    padding: 0 0 0 0;
-    min-height: 200px;
-    width: 90vmax;
+    padding: 20px;
+    margin-left: 130px;
+    height: 200px;
+    width: 80vmax;
+    background-color: rgb(65, 58, 197);
+    border-radius: 5px;
+}
+
+.contact .par {
+    box-sizing: border-box;
+    margin: 45px 0 0 35px;
+    /* border: 1px solid white; */
+    height: 100px;
+    width: 700px;
+
+}
+
+.contact .btn {
+    box-sizing: border-box;
+    margin: 45px 0 0 150px;
+    /* border: 1px solid white; */
+    height: 150px;
+    width: 350px;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
+
+.contact .button {
+    /* Green */
+    border: 1px solid white;
+    color: white;
+    padding: 20px 32px;
     text-align: center;
-    justify-content: space-evenly;
-    letter-spacing: 3px;
-    background-color: rgb(106, 101, 197);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.contact .discord {
+    background-color: none;
+}
+
+.contact .discord:hover {
+    opacity: .8;
+}
+
+.contact .email {
+    background-color: rgb(204, 59, 59);
+    margin-left: 15px;
+}
+
+.contact .email:hover {
+    opacity: .8;
+
 }
 
 
-
-.contact h4 {
-    font-weight: 100;
-    margin-top: 20px;
-    text-align: left;
+.contact p {
+    letter-spacing: 2px;
+    font-size: 27px;
+    font-weight: bold;
 }
 
+/* work */
+
+.work {
+    height: 500px;
+    padding: 100px 50px 30px 50px;
+    margin-top: 200px;
+    border-bottom: 1px solid white;
+}
+
+.work a {
+    color: white;
+}
+
+.work p {
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.work h2 {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 72px;
+}
+
+.work img {
+    /* background-color: white; */
+    margin-bottom: -20px;
+    width: 100px;
+    height: 80px;
+}
+
+.work h2:hover {
+    text-decoration: underline;
+}
 
 
 /* footer */
@@ -738,9 +827,13 @@ twitter:hover {
     }
 
     .column {
-        -ms-flex: 50%;
-        flex: 50%;
+        -ms-flex: 25%;
+        flex: 20%;
         max-width: 20vmax;
+    }
+
+    .column img {
+        width: 95%;
     }
 
     .container-skill {
