@@ -643,7 +643,7 @@ nav.sticky {
 }
 
 .businness {
-    margin-right: 0;
+    margin-top: 15px;
     /* background-color: rgb(196, 182, 182); */
 }
 
@@ -843,10 +843,8 @@ twitter:hover {
 
     .container-skill a img {
         /* background-color: white; */
-        width: 14vmax;
+        width: 12vmax;
         padding: 15px;
-
-
     }
 
     .gallery h2 {
@@ -859,6 +857,17 @@ twitter:hover {
         height: 250px;
         margin: 0 0 0 85px;
         padding: 0;
+    }
+
+    .contact .email {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .work {
+        margin-left: 35px;
+        width: 900px;
+        /* border: 1px solid white; */
     }
 
     .footer {
@@ -1067,6 +1076,29 @@ twitter:hover {
         max-width: 20vmax;
     }
 
+    .contact {
+        flex-wrap: wrap;
+        height: 400px;
+    }
+
+    .contact .par {
+        margin: 20px 0 0 15px;
+        width: 560px;
+        /* border: 1px solid white; */
+    }
+
+    .contact .btn {
+        display: flex;
+        justify-content: space-evenly;
+        margin: -20px 0 0 60px;
+        width: 400px;
+        /* border: 1px solid white; */
+    }
+
+    .contact .email {
+        margin-left: 20px;
+    }
+
     .skill .TS {
         font-size: 35px;
     }
@@ -1098,6 +1130,10 @@ twitter:hover {
     .gallery h2 {
         font-size: 35px;
         margin: 20px;
+    }
+
+    .gallery .column1 {
+        display: none
     }
 
     .contact {
@@ -1162,6 +1198,7 @@ twitter:hover {
         /* background-color: rosybrown; */
         width: 100%;
         padding: 10px;
+        margin-top: -10px;
     }
 
     .businness h4 {
@@ -1194,7 +1231,7 @@ twitter:hover {
         justify-content: space-evenly;
         right: 0;
         top: 0;
-        height: 130vh;
+        height: 100vh;
 
         background-color: rgb(89, 79, 226);
         ;
@@ -1362,9 +1399,37 @@ twitter:hover {
     }
 
     .contact {
+        font-size: 20px;
+        font-weight: ;
         width: 430px;
         margin: 0 0 0 28px;
         padding: 0;
+        height: 40vh;
+    }
+
+    .contact p {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .contact .btn {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .work {
+        /* border: 1px solid white; */
+        margin-top: 0px;
+        padding: 95px 0 0 0;
+        height: 40vh;
+    }
+
+    .work a {
+        margin-bottom: 0;
+    }
+
+    .work h2 {
+        font-size: 33px;
     }
 
     .footer {
@@ -1585,9 +1650,35 @@ twitter:hover {
         color: white;
     }
 
-    .container-skill a img {
-        width: 70px;
-        padding: 10px;
+    .contact {
+        width: 48vmax;
+        padding: 0;
+        margin: 0 0 0 0;
+    }
+
+    .contact p {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .contact .btn {
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    .work {
+        /* border: 1px solid white; */
+        margin-top: 0px;
+        padding: 95px 0 0 0;
+        height: 40vh;
+    }
+
+    .work a {
+        margin-bottom: 0;
+    }
+
+    .work h2 {
+        font-size: 30px;
     }
 
     .skill .TS {
@@ -1602,15 +1693,11 @@ twitter:hover {
 
 
     .container-skill a img {
-        width: 10vmax;
+        width: 12vmax;
         padding: 15px;
     }
 
-    .contact {
-        width: 40vmax;
-        margin: 0 0 0 0px;
-        padding: 0;
-    }
+
 
     .footer {
         grid-template-areas:
@@ -1678,7 +1765,7 @@ twitter:hover {
         grid-area: email;
         display: flex;
         /* background-color: rosybrown; */
-        width: 41vmax;
+        width: 80%;
         padding: 10px 0 0 0px;
         margin: 0 0px 20px 30px;
         height: 60px;
@@ -1829,22 +1916,15 @@ twitter:hover {
     }
 
     .skill .TS {
-        font-size: 25px;
-    }
-
-    .container-skill a img {
-        width: 72px;
-        padding: 10px;
-    }
-
-    .skill .TS {
         font-size: 30px;
     }
 
-
+    .work h2 {
+        font-size: 28px;
+    }
 
     .container-skill a img {
-        width: 11vmax;
+        width: 12vmax;
         padding: 15px;
     }
 
@@ -1853,9 +1933,7 @@ twitter:hover {
         width: 45vmax;
     }
 
-    .contact p {
-        font-size: 12px;
-    }
+
 
     .footer {
         grid-template-areas:
@@ -1950,13 +2028,17 @@ twitter:hover {
 }
 
 
-@media (max-width:355px) {
+@media (max-width:360px) {
     body {
         margin-right: 10px;
     }
 
     .contact {
         margin-left: 3px;
+    }
+
+    .work h2 {
+        font-size: 27px;
     }
 }
 
@@ -1965,8 +2047,28 @@ twitter:hover {
         height: 100vh;
     }
 
+    .contact .button {
+        margin-top: -15px;
+        padding: 10px 25px 5px 25px;
+    }
+
+    .contact p {
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .contact .btn {
+        padding: 0 0 0 0;
+    }
+
+
+
+    .work h2 {
+        font-size: 23px;
+    }
+
     .container-skill a img {
-        width: 11vmax;
+        width: 12vmax;
         padding: 15px;
     }
 
