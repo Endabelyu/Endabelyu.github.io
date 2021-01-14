@@ -149,7 +149,6 @@ nav.sticky {
     padding: 0;
     margin: -40px 0 40px 0;
     font-size: 1em;
-
 }
 
 .hero {
@@ -185,6 +184,8 @@ nav.sticky {
 
 }
 
+
+
 .about-me p {
     width: 48vmax;
     margin-top: 20px;
@@ -195,8 +196,36 @@ nav.sticky {
     text-align: left;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
     color: rgb(255, 255, 255);
-
 }
+
+.mail {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.about-me div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 1px solid white; */
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+.link i {
+    color: rgb(60, 53, 175);
+}
+
 
 /* project */
 .project {
@@ -223,8 +252,6 @@ nav.sticky {
     /* padding: 30px; */
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-
 }
 
 .container-project img {
@@ -461,6 +488,9 @@ nav.sticky {
     border-radius: 5px;
 }
 
+
+
+
 /* contact */
 .contact {
     display: flex;
@@ -477,16 +507,17 @@ nav.sticky {
     margin: 45px 0 0 35px;
     /* border: 1px solid white; */
     height: 100px;
-    width: 700px;
+    width: 800px;
 
 }
 
 .contact .btn {
+    display: flex;
     box-sizing: border-box;
-    margin: 45px 0 0 150px;
+    margin: 45px 0 0 10px;
     /* border: 1px solid white; */
-    height: 150px;
-    width: 350px;
+    height: 100px;
+    width: 450px;
     font-size: 16px;
     font-weight: 500;
 
@@ -494,7 +525,7 @@ nav.sticky {
 }
 
 .contact .button {
-    /* Green */
+
     border: 1px solid white;
     color: white;
     padding: 20px 32px;
@@ -1132,7 +1163,7 @@ twitter:hover {
         margin: 20px;
     }
 
-    .gallery .column1 {
+    .gallery .c1 {
         display: none
     }
 
