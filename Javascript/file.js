@@ -16,3 +16,14 @@ const navbar = document.querySelector('.navbar');
             navbar.classList.remove('muncul');
         }
     };
+
+
+//  function smoothScroll(target, duration) {
+//      var target = document.querySelectorAll('navlink')
+//      var targetPosition = target.getBoundingClientRect().top;
+//      var startPosition = window.pageYOffset
+
+//      console.log
+//  }
+
+  
